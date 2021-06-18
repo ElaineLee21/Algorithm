@@ -5,11 +5,11 @@ function solution(n) {
    var answer = 0;
  
    //n이 1234라고 쳤을 때
- let arrayOfDigits = Array.from(String(n), Number); //[1,2,3,4]
- answer = arrayOfDigits.sort((a, b) => b - a); //[4,3,2,1]
- answer = answer.map(String); //['4','3','2','1']
- answer = answer.join('') //'4321'
- answer = Number(answer); //4321
+   let arrayOfDigits = Array.from(String(n), Number); //[1,2,3,4]
+   answer = arrayOfDigits.sort((a, b) => b - a); //[4,3,2,1]
+   answer = answer.map(String); //['4','3','2','1']
+   answer = answer.join('') //'4321'
+   answer = Number(answer); //4321
  
  return answer;
 }
